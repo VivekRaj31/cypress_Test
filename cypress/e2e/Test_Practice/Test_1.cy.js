@@ -18,4 +18,11 @@ describe("Test_Suite1",()=>
             cy.get("[name='email']").type(Cypress.env('useremail'),{delay: 1000})
             cy.get('#pass').type(Cypress.env('password'))
     })
+
+    it("Testcase_3",{browser:"electron"},()=>
+        {
+                cy.log("test")
+        })
+
+
 })
