@@ -89,6 +89,13 @@ module.exports = defineConfig({
       waitForAnimations: true,
       watchForFileChanges: true,
     },
+      reporter: "mochawesome",
+      reporterOptions: {
+        reportDir: "cypress/reports/html",
+        overwrite: false,
+        html: true,
+        json: true
+    },
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
